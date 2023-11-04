@@ -26,7 +26,7 @@ function salvar() {
     const numero = resultado2.toFixed(2);
 
     if (isNaN(numero)) {
-        alert("Você precisa adicionar os valores antes de salvar. Por favor, tente novamente!");
+        
     } else {
         var valor1 = parseFloat(document.getElementById('in1').value);
         var valor2 = parseFloat(document.getElementById('in2').value);
@@ -34,8 +34,6 @@ function salvar() {
         var valor4 = parseFloat(document.getElementById('in4').value);
 
         calcular();
-
-        alert("Valores salvos com sucesso!")
         var resultado = parseFloat(document.getElementById('resultado').innerText.split('R$ ')[1]);
 
         var dataAtual = new Date();
