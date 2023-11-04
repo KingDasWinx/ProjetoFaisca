@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa bold;
+    font-weight: 700;
+    user-select: none;
+}
+
+body {
+    background-image: url(tela.png);
+    background-attachment: fixed;
+}
+
+.containerSite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button,
+input,
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    border-radius: 15px;
+    padding: 0 15px;
+
+    font-size: 23px;
+    font-family: Comfortaa;
+    background-color: #CADCFF;
+}
+
+p {
+    color: black;
+}
+
+.inputText {
+    display: flex;
+    width: 52%;
+    padding: 0 8px;
+    background-color: transparent;
+    font-size: 23px;
+}
+
+.resultado {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF8D1;
+    width: 370px;
+    height: 130px;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.resultado p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.h2 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.botoes1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.botoes2 {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: Comfortaa;
+    font-weight: 700;
+    color: #000;
+    transform: translateY(0);
+}
+
+.calcular {
+    background-color: #E69DFF;
+}
+.calcular:hover, .calcular::after {
+    background-color: #df89fc;
+    transform: translateY(-2px);
+}
+
+.salvar {
+    background-color: #9DFFBE;
+}
+.salvar:hover {
+    background-color: #79f7a3;
+    transform: translateY(-2px);
+}
+
+.historico {
+    width: 310px;
+    margin-bottom: 30px;
+}
+.historico:hover {
+    background-color: #79f7a3;
+    transform: translateY(-2px);
+}
+
+.containerHistorico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.exampleCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 350px;
+
+    border-radius: 15px;
+    background: #00114F;
+    border: 8px solid var(--branco, #FFF);
+}
+
+.data {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    font-size: 22px;
+}
+
+.inputCard,
+.inputCardResu,
+.exampleCard button {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 90%;
+    height: 40px;
+    background-color: #CADCFF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.inputCardResu {
+    background-color: #FFF8D1;
+}
+
+.exampleCard button {
+    justify-content: center;
+    background-color: #FE9999;
+    margin-bottom: 10px;
+}
+
+.voltar {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+}
+.voltar img {
+    width: 60px;
+}

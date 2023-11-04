@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Faisca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="containerImg">
+        <div class="containerSite" id="telinha">
+            <div class="luminaria">
+                <img src="lumina.svg" alt="">
+            </div>
+            <div class="input">
+                <label for="in1">
+                    <p>mês anterior:</p>
+                    <input class="inputText" type="number" name="in1" id="in1">
+                </label>
+
+
+                <label for="in2">
+                    <p>mês atual:</p>
+                    <input class="inputText" type="number" name="in2" id="in2">
+                </label>
+
+
+                <label for="in3">
+                    <p>valor da conta:</p>
+                    <input class="inputText" type="number" name="in3" id="in3">
+                </label>
+
+                <label for="in4">
+                    <p>kWh:</p>
+                    <input class="inputText" type="number" name="in4" id="in4">
+                </label>
+
+                <div class="resultado">
+                    <p>resultado</p>
+                    <div class="h2" id="resultado">R$ 0</div>
+                </div>
+            </div>
+            <div class="botoes">
+                <div class="botoes1">
+                    <input class="button calcular" type="button" value="calcular" onclick="calcular()">
+                    <input class="button salvar" type="button" value="salvar" onclick="salvar()">
+                </div>
+                <div class="botoes2">
+                    <input class="button historico" type="button" value="historico" onclick="exibirHistorico()">
+                </div>
+            </div>
+        </div>
+        <div class="containerHistorico" id="historico"></div>
+        <button class="voltar" id="back" onclick="voltar()"><img src="back.svg" alt=""></button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
